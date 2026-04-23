@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV og Portfolio for Kasper - IS-302 Internship Team">
+    <title>Kasper | CV & Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#2563eb', primaryDark: '#1d4ed8' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-200 font-sans p-4 md:p-8 antialiased">
+    <div class="fixed top-4 right-4 z-50 print:hidden">
+        <button id="theme-toggle" class="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 hover:scale-105 transition-transform">
+            <i class="fas fa-moon dark:hidden text-gray-800"></i>
+            <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+        </button>
+    </div>
+    <nav class="max-w-6xl mx-auto mb-6 print:hidden">
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
+            
+            <a href="index.html" class="px-5 py-2.5 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-lg font-medium whitespace-nowrap transition-colors">
+                <i class="fas fa-user text-sm mr-2"></i>Kristian Stenersen
+            </a>
+            <a href="Hans.html" class="px-5 py-2.5 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-lg font-medium whitespace-nowrap transition-colors">
+                Hans
+            </a>
+            <a href="kasper.html" class="px-5 py-2.5 bg-primary text-white rounded-lg font-semibold shadow-sm whitespace-nowrap transition-colors">
+                Kasper
+            </a>
+            <a href="mats.html" class="px-5 py-2.5 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-lg font-medium whitespace-nowrap transition-colors">
+                Mats
+            </a>
+        </div>
+    </nav>
+    <main class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <aside class="lg:col-span-4 space-y-6">
+            <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 bg-gray-200 dark:bg-gray-800 rounded-full flex items-center justify-center border-2 border-primary overflow-hidden shrink-0">
+                        <span class="text-gray-500 font-bold text-xl">K</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold tracking-tight">Kasper</h1>
+                        <p class="text-primary font-medium text-sm">IT-student | Teammedlem</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">UiA | IS-302 Internship</p>
+                    </div>
+                </div>
+                <div class="space-y-3 text-sm text-gray-600 dark:text-gray-300 border-t border-gray-100 dark:border-gray-800 pt-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-envelope w-4 text-center"></i> kasper@eksempel.no
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fab fa-linkedin w-4 text-center"></i> linkedin.com/in/kasper
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-map-marker-alt w-4 text-center"></i> Kristiansand, Norge
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
+                <h2 class="text-lg font-bold mb-4 flex items-center gap-2"><i class="fas fa-layer-group text-primary"></i> Tech Stack</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">Kompetanse</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">Java</span>
+                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">React</span>
+                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="lg:col-span-8 space-y-6">
+            <section class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
+                <h2 class="text-xl font-bold mb-3">Om Meg</h2>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                    Jeg er en del av teamet sammen med Kristian, Kasper og Mats. Som IT-student ved UiA brenner jeg for å skape gode tekniske løsninger og ser frem til å bidra i et internship-prosjekt.
+                </p>
+            </section>
+            <section class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
+                <h2 class="text-xl font-bold mb-5 flex items-center gap-2"><i class="fas fa-briefcase text-primary"></i> Erfaring & Utdanning</h2>
+                <div class="space-y-6">
+                    <div class="relative pl-4 border-l-2 border-primary">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                            <h3 class="font-bold text-gray-900 dark:text-white">IS-302 Internship</h3>
+                            <span class="text-sm font-medium text-primary mt-1 sm:mt-0">Høst 2026</span>
+                        </div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 font-medium">Universitetet i Agder (UiA)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="max-w-6xl mx-auto mt-8 text-center pb-8 print:hidden">
+        <p class="text-xs text-gray-500">&copy; 2026 Team UiA. <button onclick="window.print()" class="underline hover:text-primary ml-2">Skriv ut som PDF</button></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

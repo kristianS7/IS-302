@@ -1,0 +1,40 @@
+/* Fjerner unødvendige margins på body for renere look */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Utskriftsoptimalisering (Print / PDF) --- */
+@media print {
+    /* Tvinger lys bakgrunn og mørk tekst uavhengig av dark mode */
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    /* Fjerner skygger og legger til rene rammer for print */
+    .shadow-sm, .shadow-lg {
+        box-shadow: none !important;
+        border: 1px solid #e5e7eb !important;
+    }
+    
+    /* Endrer grid fra 1-kolonne (mobil) til side-by-side for A4-arket */
+    main {
+        display: grid !important;
+        grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+        gap: 1.5rem !important;
+    }
+    
+    aside {
+        grid-column: span 4 / span 4 !important;
+    }
+    
+    .lg\:col-span-8 {
+        grid-column: span 8 / span 8 !important;
+    }
+
+    /* Sikrer at moduler ikke brytes midt i på to sider */
+    section, div.bg-white {
+        break-inside: avoid;
+    }
+}

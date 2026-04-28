@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV og Portfolio for Kristian Stenersen - IS-302 Internship">
-    <title>Kristian Stenersen | CV & Portfolio</title>
+    <meta name="description" content="IS-302 Internship Team Portfolio">
+    <title>IS-302 Internship Team</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -13,183 +13,169 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    colors: { primary: '#2563eb', primaryDark: '#1d4ed8' }
+                    colors: { primary: '#2563eb' }
                 }
             }
         }
     </script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-200 font-sans p-4 md:p-8 antialiased">
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 antialiased p-4 md:p-8">
 
-    <div class="fixed top-4 right-4 z-50 print:hidden">
-        <button id="theme-toggle" class="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 hover:scale-105 transition-transform">
-            <i class="fas fa-moon dark:hidden text-gray-800"></i>
-            <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
-        </button>
-    </div>
+    <header class="max-w-6xl mx-auto py-12 text-center">
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">IS-302 Internship Team</h1>
+        <p class="text-lg text-gray-600 dark:text-gray-400">Vi er fire studenter fra UiA som søker praksisplass.</p>
+    </header>
 
-    <nav class="max-w-6xl mx-auto mb-6 print:hidden">
-        <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
-            <a href="index.html" class="px-5 py-2.5 bg-primary text-white rounded-lg font-semibold shadow-sm whitespace-nowrap transition-colors">
-                <i class="fas fa-user text-sm mr-2"></i>Kristian Stenersen
-            </a>
-            
-            <a href="Hans.html" class="px-5 py-2.5 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-lg font-medium whitespace-nowrap transition-colors">
-                Hans Kristian
-            </a>
-            <a href="kasper.html" class="px-5 py-2.5 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-lg font-medium whitespace-nowrap transition-colors">
-                Kasper Rustad
-            </a>
-            <a href="mats.html" class="px-5 py-2.5 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-lg font-medium whitespace-nowrap transition-colors">
-                Mats Falck
-            </a>
-        </div>
-    </nav>
+    <main class="max-w-6xl mx-auto mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-    <main class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
-
-        <aside class="lg:col-span-4 space-y-6">
-            
-            <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-20 h-20 bg-gray-200 dark:bg-gray-800 rounded-full flex items-center justify-center border-2 border-primary overflow-hidden shrink-0">
-                        <span class="text-gray-500 font-bold text-xl">KS</span>
+            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col h-full">
+                <div class="flex items-center gap-6 mb-6">
+                    <div class="w-24 h-24 rounded-full bg-gray-200 border-2 border-primary flex items-center justify-center overflow-hidden">
+                         <span class="text-gray-400 text-3xl font-bold">KS</span>
                     </div>
                     <div>
-                        <h1 class="text-2xl font-bold tracking-tight">Kristian Stenersen</h1>
-                        <p class="text-primary font-medium text-sm">IT- og informasjonssystemstudent</p>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">UiA | Søker IS-302 Internship</p>
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white text-nowrap">Kristian Stenersen</h2>
+                        <div class="flex gap-4 mt-3">
+                            <a href="https://www.linkedin.com/in/kristian-stenersen/" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="https://github.com/kristianS7" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
+                            <a href="mailto:kristianstenersen3@gmail.com" class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                                <span class="text-xs font-medium">Min Epost</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="space-y-3 text-sm text-gray-600 dark:text-gray-300 border-t border-gray-100 dark:border-gray-800 pt-4">
-                    <a href="mailto:kristianstenersen3@gmail.com" class="flex items-center gap-3 hover:text-primary transition-colors">
-                        <i class="fas fa-envelope w-4 text-center"></i> kristianstenersen3@gmail.com
-                    </a>
-                    <a href="https://www.linkedin.com/in/kristian-stenersen/" target="_blank" class="flex items-center gap-3 hover:text-primary transition-colors">
-                        <i class="fab fa-linkedin w-4 text-center"></i> Linkedin
-                    </a>
-                    <a href="https://github.com/kristianS7" target="_blank" class="flex items-center gap-3 hover:text-primary transition-colors">
-                        <i class="fab fa-github w-4 text-center"></i> GitHub
-                    </a>
-                    <div class="flex items-center gap-3">
-                        <i class="fas fa-map-marker-alt w-4 text-center"></i> Søgne, Agder 
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
-                <h2 class="text-lg font-bold mb-4 flex items-center gap-2"><i class="fas fa-layer-group text-primary"></i> Tech Stack & Verktøy</h2>
-                
                 <div class="space-y-4">
                     <div>
-                        <h3 class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">Utvikling & Data</h3>
-                        <div class="flex flex-wrap gap-1.5">
-                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">C#</span>
-                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">Python</span>
-                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">SQL</span>
-                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">REST API</span>
-                        </div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Om Meg</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Engasjert IT-student med fokus på systemutvikling, brukeropplevelse og KI. Bruker KI aktivt for å effektivisere problemløsning. Teknologier jeg er kjent med er: C#, .NET, python, SQL, Git og Github, QGIS, Claude Code, Docker</p>
                     </div>
-                    
                     <div>
-                        <h3 class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">GIS</h3>
-                        <div class="flex flex-wrap gap-1.5">
-                            <span class="px-2.5 py-1 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 text-sm rounded-md font-medium">QGIS</span>
-                            <span class="px-2.5 py-1 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 text-sm rounded-md font-medium">GeoPandas</span>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">Metodikk, Verktøy & KI</h3>
-                        <div class="flex flex-wrap gap-1.5">
-                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">Git / GitHub</span>
-                            <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-md font-medium">Docker</span>
-                            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 text-sm rounded-md font-medium flex items-center gap-1"><i class="fas fa-robot text-xs"></i> Vibekoding</span>
-                            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 text-sm rounded-md font-medium">KI for kapasitetskalering</span>
-                        </div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Erfaring</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
+                            <li>Bachelor i IT og Informasjonssystemer (NÅ)</li>
+                            <li>Prosjektarbeid og smidig metodikk (NÅ)</li>
+                            <li>Førstegangstjeneste i Hæren (2023-2024)</li>
+                            <li>Logistikkmedarbeider i Norwegian Concept (NÅ)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-        </aside>
-
-        <div class="lg:col-span-8 space-y-6">
-            
-            <section class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
-                <h2 class="text-xl font-bold mb-3">Om Meg</h2>
-                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                    Jeg er en engasjert IT-student ved Universitetet i Agder med et sterkt fokus på krysningen mellom systemutvikling, datahåndtering (GIS/SQL) og moderne verktøy. Jeg bruker aktivt kunstig intelligens for å skalere opp min egen arbeidskapasitet og effektivisere problemløsning. Gjennom emnet IS-302 søker jeg en praksisplass hvor jeg kan lære av erfarne fagfolk, bidra med mine tekniske ferdigheter og vokse både faglig og personlig. Jeg er spesielt interessert i hvordan IT-løsninger kan optimalisere forretningsprosesser og skape verdi for organisasjoner.
-                </p>
-            </section>
-
-            <section class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800 print:hidden">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="text-xs bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 px-2 py-1 rounded font-bold"></span>
-                    <video width="640" height="360" controls>
-                    <source src="videopitch.mp4" type="video/mp4"></video>
-                </div>
-                <div class="aspect-video bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center border border-gray-200 dark:border-gray-700 overflow-hidden relative group cursor-pointer">
-                    <div class="text-center transition-transform group-hover:scale-110">
-                        <i class="fas fa-play-circle text-5xl text-primary mb-2 shadow-sm rounded-full"></i>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Klikk for å spille av presentasjon</p>
+            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col h-full">
+                <div class="flex items-center gap-6 mb-6">
+                    <div class="w-24 h-24 rounded-full bg-gray-200 border-2 border-primary flex items-center justify-center overflow-hidden">
+                         <span class="text-gray-400 text-3xl font-bold">ML</span>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Mats Lie</h2>
+                        <div class="flex gap-4 mt-3">
+                            <a href="https://www.linkedin.com/in/mats-lie-137b14205/" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="https://github.com/FalckM" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
+                            <a href="mailto:din-epost@eksempel.no" class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                                <span class="text-xs font-medium">Din e-post</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
-                <h2 class="text-xl font-bold mb-5 flex items-center gap-2"><i class="fas fa-briefcase text-primary"></i> Erfaring & Utdanning</h2>
-                
-                <div class="space-y-6">
-                    <div class="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
-                            <h3 class="font-bold text-gray-900 dark:text-white">Bachelor i IT og Informasjonssystemer</h3>
-                            <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">2024 - D.d.</span>
-                        </div>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 font-medium">Universitetet i Agder (UiA)</p>
-                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                            <li>Fokus på systemutvikling, arkitektur og databaser.</li>
-                            <li>Tverrfaglig forståelse av hvordan IT støtter forretningsmål.</li>
-                            <li>Prosjektarbeid og smidig metodikk.</li>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Om Meg</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">IT-student ved UiA som brenner for å skape gode tekniske løsninger og bidra i team-prosjekter.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Erfaring</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
+                            <li>Kompetanse innen Java, React og Node.js</li>
+                            <li>Studier ved Universitetet i Agder</li>
                         </ul>
                     </div>
+                </div>
+            </div>
 
-                    <div class="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-3">
-                            <h3 class="font-bold text-gray-900 dark:text-white">Utvalgte Prosjekter</h3>
-                            <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">GitHub</span>
-                        </div>
-                        
-                        <div class="space-y-3">
-                            <a href="https://github.com/kJ4SPer/NRLWebApp" target="_blank" class="block p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-100 dark:border-gray-700 transition-colors group">
-                                <div class="flex items-center gap-2 mb-1">
-                                    <i class="fab fa-github text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors"></i>
-                                    <h4 class="font-bold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">NRLWebApp</h4>
-                                </div>
-                                <p class="text-xs text-gray-500 dark:text-gray-400">Se kildekode og dokumentasjon på GitHub.</p>
-                            </a>
-
-                            <a href="https://github.com/kJ4SPer/IS-218" target="_blank" class="block p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-100 dark:border-gray-700 transition-colors group">
-                                <div class="flex items-center gap-2 mb-1">
-                                    <i class="fab fa-github text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors"></i>
-                                    <h4 class="font-bold text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">IS-218 (Oppgave 4)</h4>
-                                </div>
-                                <p class="text-xs text-gray-500 dark:text-gray-400">Se kildekode og dokumentasjon på GitHub.</p>
+            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col h-full">
+                <div class="flex items-center gap-6 mb-6">
+                    <div class="w-24 h-24 rounded-full bg-gray-200 border-2 border-primary flex items-center justify-center overflow-hidden">
+                         <span class="text-gray-400 text-3xl font-bold">KR</span>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Kasper Rustad</h2>
+                        <div class="flex gap-4 mt-3">
+                            <a href="https://www.linkedin.com/in/kasper-rustad/" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="https://github.com/kJ4SPer" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
+                            <a href="mailto:din-epost@eksempel.no" class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                                <span class="text-xs font-medium">Din e-post</span>
                             </a>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Om Meg</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Engasjert i teknisk utvikling og ser frem til å bruke mine ferdigheter i et praktisk internship.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Erfaring</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
+                            <li>Fokus på moderne webteknologier</li>
+                            <li>Prosjektdeltakelse via UiA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col h-full">
+                <div class="flex items-center gap-6 mb-6">
+                    <div class="w-24 h-24 rounded-full bg-gray-200 border-2 border-primary flex items-center justify-center overflow-hidden">
+                         <span class="text-gray-400 text-3xl font-bold">HS</span>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white text-nowrap">Hans K. Steffenstorpet</h2>
+                        <div class="flex gap-4 mt-3">
+                            <a href="https://www.linkedin.com/in/hans-kristian-steffenstorpet-619610403/" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="https://github.com/HKwastaken" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
+                            <a href="mailto:din-epost@eksempel.no" class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                                <span class="text-xs font-medium">Din e-post</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Om Meg</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">IT-student med interesse for robuste tekniske løsninger og læring gjennom praktisk arbeid.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Erfaring</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
+                            <li>Utdanning innen IT-systemer (UiA)</li>
+                            <li>Team-basert systemutvikling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8">Vår Videopitch</h2>
+            <div class="max-w-4xl mx-auto bg-black rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800">
+                <video controls class="w-full h-auto shadow-inner">
+                    <source src="praksisvideo.mp4" type="video/mp4">
+                    Nettleseren din støtter ikke video.
+                </video>
+            </div>
         </div>
     </main>
 
-    <footer class="max-w-6xl mx-auto mt-8 text-center pb-8 print:hidden">
-        <p class="text-xs text-gray-500">&copy; 2026 Team UiA (Kristian, Hans, Kasper, Mats). Optimalisert for rask visning. <button onclick="window.print()" class="underline hover:text-primary ml-2">Skriv ut profil som PDF</button></p>
+    <footer class="text-center py-8 border-t border-gray-200 dark:border-gray-800">
+        <p class="text-xs text-gray-500">&copy; 2026 Team UiA. <button onclick="window.print()" class="underline hover:text-primary ml-1">Lagre som PDF</button></p>
     </footer>
 
     <script src="script.js"></script>

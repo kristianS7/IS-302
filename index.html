@@ -6,156 +6,158 @@
     <meta name="description" content="IS-302 Internship Team Portfolio">
     <title>IS-302 Internship Team</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    colors: { primary: '#2563eb' }
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: { 
+                        primary: '#06b6d4', /* Frisk Cyan */
+                        gray: tailwind.colors.slate
+                    }
                 }
             }
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 antialiased p-4 md:p-8">
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 antialiased p-4 md:p-8">
 
     <header class="max-w-6xl mx-auto py-12 text-center">
-        <h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">IS-302 Internship Team</h1>
-        <p class="text-lg text-gray-600 dark:text-gray-400">Vi er fire studenter fra UiA som søker praksisplass.</p>
+        <h1 class="text-4xl font-extrabold text-slate-800 dark:text-white mb-4">IS-302 Praksis Gruppe</h1>
+        <p class="text-xl text-slate-600 dark:text-slate-400">Vi er fire studenter fra UiA som søker praksisplass hos deg.</p>
     </header>
 
     <main class="max-w-6xl mx-auto mb-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col h-full">
+            <div class="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col h-full">
                 <div class="flex items-center gap-6 mb-6">
-                    <div class="w-24 h-24 rounded-full bg-gray-200 border-2 border-primary flex items-center justify-center overflow-hidden">
-                         <span class="text-gray-400 text-3xl font-bold">KS</span>
+                    <div class="w-24 h-24 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center overflow-hidden">
+                         <span class="text-primary text-3xl font-bold">KS</span>
                     </div>
                     <div>
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white text-nowrap">Kristian Stenersen</h2>
+                        <h2 class="text-2xl font-bold text-slate-800 dark:text-white">Kristian Stenersen</h2>
                         <div class="flex gap-4 mt-3">
-                            <a href="https://www.linkedin.com/in/kristian-stenersen/" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
-                            <a href="https://github.com/kristianS7" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
-                            <a href="mailto:kristianstenersen3@gmail.com" class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
-                                <i class="fas fa-envelope text-xl"></i>
-                                <span class="text-xs font-medium">Min Epost</span>
-                            </a>
+                            <a href="https://www.linkedin.com/in/kristian-stenersen/" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="https://github.com/kristianS7" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-6">
                     <div>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Om Meg</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Engasjert IT-student med fokus på systemutvikling, brukeropplevelse og KI. Bruker KI aktivt for å effektivisere problemløsning. Teknologier jeg er kjent med er: C#, .NET, python, SQL, Git og Github, QGIS, Claude Code, Docker</p>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Om Meg</h3>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed">Engasjert IT-student med fokus på systemutvikling, brukeropplevelse og KI. Bruker KI aktivt for å effektivisere problemløsning.  Teknologier jeg er kjent med er: C#, .NET, python, SQL, Git og Github, QGIS, Claude Code, Docker</p>
+                        <br>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed">Jeg er en sosial og utadvendt person som trives i team, og jeg er alltid ivrig etter å lære nye ting og ta på meg utfordringer. Jeg ser nå etter en praksisplass hvor jeg kan få brukt mine ferdigheter og bidra til spennende prosjekter og lære av de profesjonelle.</p>
+                        <br>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed">På fritiden holder jeg som regel på med enten fiske i skjærgården der jeg bor i Søgne eller så spiller jeg padel med venner. </p>
                     </div>
                     <div>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Erfaring</h3>
-                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
-                            <li>Bachelor i IT og Informasjonssystemer (NÅ)</li>
-                            <li>Prosjektarbeid og smidig metodikk (NÅ)</li>
-                            <li>Førstegangstjeneste i Hæren (2023-2024)</li>
-                            <li>Logistikkmedarbeider i Norwegian Concept (NÅ)</li>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Erfaring</h3>
+                        <ul class="space-y-2 text-base text-slate-800 dark:text-slate-200">
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Bachelor i IT og Informasjonssystemer (NÅ)</li>
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Prosjektarbeid og smidig metodikk (NÅ)</li>
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Førstegangstjeneste i Hæren (2023-2024)</li>
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Logistikkmedarbeider i Norwegian Concept (NÅ)</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col h-full">
+            <div class="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col h-full">
                 <div class="flex items-center gap-6 mb-6">
-                    <div class="w-24 h-24 rounded-full bg-gray-200 border-2 border-primary flex items-center justify-center overflow-hidden">
-                         <span class="text-gray-400 text-3xl font-bold">ML</span>
+                    <div class="w-24 h-24 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center overflow-hidden">
+                         <span class="text-primary text-3xl font-bold">ML</span>
                     </div>
                     <div>
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Mats Lie</h2>
+                        <h2 class="text-2xl font-bold text-slate-800 dark:text-white">Mats Lie</h2>
                         <div class="flex gap-4 mt-3">
-                            <a href="https://www.linkedin.com/in/mats-lie-137b14205/" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
-                            <a href="https://github.com/FalckM" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
-                            <a href="mailto:din-epost@eksempel.no" class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
-                                <i class="fas fa-envelope text-xl"></i>
-                                <span class="text-xs font-medium">Din e-post</span>
-                            </a>
+                            <a href="https://www.linkedin.com/in/mats-lie-137b14205/" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="https://github.com/FalckM" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-6">
                     <div>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Om Meg</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">IT-student ved UiA som brenner for å skape gode tekniske løsninger og bidra i team-prosjekter.</p>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Om Meg</h3>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed">IT-student ved UiA som brenner for å skape gode tekniske løsninger og bidra i team-prosjekter.</p>
                     </div>
                     <div>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Erfaring</h3>
-                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
-                            <li>Kompetanse innen Java, React og Node.js</li>
-                            <li>Studier ved Universitetet i Agder</li>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Erfaring</h3>
+                        <ul class="space-y-2 text-base text-slate-800 dark:text-slate-200">
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Kompetanse innen Java, React og Node.js</li>
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Studier ved Universitetet i Agder</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col h-full">
+            <div class="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col h-full">
                 <div class="flex items-center gap-6 mb-6">
-                    <div class="w-24 h-24 rounded-full bg-gray-200 border-2 border-primary flex items-center justify-center overflow-hidden">
-                         <span class="text-gray-400 text-3xl font-bold">KR</span>
+                    <div class="w-24 h-24 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center overflow-hidden">
+                         <span class="text-primary text-3xl font-bold">KR</span>
                     </div>
                     <div>
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Kasper Rustad</h2>
+                        <h2 class="text-2xl font-bold text-slate-800 dark:text-white">Kasper Rustad</h2>
                         <div class="flex gap-4 mt-3">
-                            <a href="https://www.linkedin.com/in/kasper-rustad/" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
-                            <a href="https://github.com/kJ4SPer" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
-                            <a href="mailto:din-epost@eksempel.no" class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
-                                <i class="fas fa-envelope text-xl"></i>
-                                <span class="text-xs font-medium">Din e-post</span>
-                            </a>
+                            <a href="https://www.linkedin.com/in/kasper-rustad/" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="https://github.com/kJ4SPer" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-6">
                     <div>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Om Meg</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Engasjert i teknisk utvikling og ser frem til å bruke mine ferdigheter i et praktisk internship.</p>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Om Meg</h3>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed">Hei! Jeg er Kasper (25), en teknologi-entusiast fra Ski som elsker å bygge ting fra bunnen av. Med erfaring fra både OsloMet og UiA har jeg fått brynet meg på alt fra anvendt datateknologi til informasjonssystemer, med et spesielt fokus på fullstack-utvikling. Planen videre er en master i cybersikkerhetsledelse for å virkelig kunne sikre fremtidens løsninger.
+                        </p>
+                        <br>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed">  Arbeidshverdagen min hos Elkjøp har lært meg å forstå brukerens behov, mens bakgrunnen fra digital arkivering har gitt meg et skarpt øye for detaljer. Når jeg ikke koder eller studerer, finner du meg gjerne på treningssenteret, på reisefot eller foran skjermen med gode venner og dataspill. Jeg er nå på jakt etter en praksisplass hvor jeg kan få hendene på ekte problemstillinger og vise at jeg er en ressurs som både kan faget og trives i et sosialt arbeidsmiljø.</p>
                     </div>
                     <div>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Erfaring</h3>
-                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
-                            <li>Fokus på moderne webteknologier</li>
-                            <li>Prosjektdeltakelse via UiA</li>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Erfaring & Interesser</h3>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed mb-3"></p>
+                        <ul class="space-y-2 text-base text-slate-800 dark:text-slate-200">
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Fullstack-utvikling og Informasjonssystemer</li>
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Erfaring med kundehåndtering og arkivering</li>
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Aktiv på trening og reisefot</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800 flex flex-col h-full">
+            <div class="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col h-full">
                 <div class="flex items-center gap-6 mb-6">
-                    <div class="w-24 h-24 rounded-full bg-gray-200 border-2 border-primary flex items-center justify-center overflow-hidden">
-                         <span class="text-gray-400 text-3xl font-bold">HS</span>
+                    <div class="w-24 h-24 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center overflow-hidden">
+                         <span class="text-primary text-3xl font-bold">HS</span>
                     </div>
                     <div>
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white text-nowrap">Hans K. Steffenstorpet</h2>
+                        <h2 class="text-2xl font-bold text-slate-800 dark:text-white text-nowrap">Hans K. Steffenstorpet</h2>
                         <div class="flex gap-4 mt-3">
-                            <a href="https://www.linkedin.com/in/hans-kristian-steffenstorpet-619610403/" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
-                            <a href="https://github.com/HKwastaken" target="_blank" class="text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
-                            <a href="mailto:din-epost@eksempel.no" class="text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
-                                <i class="fas fa-envelope text-xl"></i>
-                                <span class="text-xs font-medium">Din e-post</span>
-                            </a>
+                            <a href="https://www.linkedin.com/in/hans-kristian-steffenstorpet-619610403/" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="https://github.com/HKwastaken" target="_blank" class="text-slate-400 hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-6">
                     <div>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Om Meg</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">IT-student med interesse for robuste tekniske løsninger og læring gjennom praktisk arbeid.</p>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Om Meg</h3>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed">Hei! Jeg er Hans Kristian (24) og er ifra Kongsvinger. Nå går jeg 2. året på IT- og informasjonssystemer ved UiA. Jeg har stor interesse for sikkerhet og trives godt å jobbe med logikk og feilsøking. Som person er jeg løsningsorientert og lærevillig, og jeg ser nå etter en praksisplass hvor jeg kan få brukt teorien min i praksis hos en bedrift. På fritiden liker jeg å trene, spille dataspill og ha det gøy med venner.</p>
+                        <br>
+                        <p class="text-base text-slate-800 dark:text-slate-200 leading-relaxed"> Teknologier jeg er kjent med er: Python, C#, Scrum, Prosjektledelse, GitHub, SQL og Figma</p>
                     </div>
                     <div>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-2">Erfaring</h3>
-                        <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
-                            <li>Utdanning innen IT-systemer (UiA)</li>
-                            <li>Team-basert systemutvikling</li>
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-2">Erfaring</h3>
+                        <ul class="space-y-2 text-base text-slate-800 dark:text-slate-200">
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Bachelorgrad i IT- og informasjonssystemer (UiA)</li>
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Prosjektarbeid i teammiljø</li>
+                            <li class="flex items-start gap-2"><span class="text-primary mt-1">•</span> Arbeid og studie innen helsesektoren</li>
                         </ul>
                     </div>
                 </div>
@@ -164,20 +166,18 @@
         </div>
 
         <div class="mt-16 text-center">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8">Vår Videopitch</h2>
-            <div class="max-w-4xl mx-auto bg-black rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800">
-                <video controls class="w-full h-auto shadow-inner">
+            <h2 class="text-3xl font-bold text-slate-800 dark:text-white mb-8">Vår Videopitch</h2>
+            <div class="max-w-4xl mx-auto bg-black rounded-2xl shadow-lg overflow-hidden border border-slate-200 dark:border-slate-800">
+                <video controls class="w-full h-auto">
                     <source src="praksisvideo.mp4" type="video/mp4">
-                    Nettleseren din støtter ikke video.
                 </video>
             </div>
         </div>
     </main>
 
-    <footer class="text-center py-8 border-t border-gray-200 dark:border-gray-800">
-        <p class="text-xs text-gray-500">&copy; 2026 Team UiA. <button onclick="window.print()" class="underline hover:text-primary ml-1">Lagre som PDF</button></p>
+    <footer class="text-center py-8 border-t border-slate-200 dark:border-slate-800">
+        <p class="text-xs text-slate-500">&copy; 2026 Team UiA. <button onclick="window.print()" class="underline hover:text-primary ml-1">Lagre som PDF</button></p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
